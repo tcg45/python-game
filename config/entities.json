@@ -6,7 +6,8 @@
         "color": "cyan",
         "interactions": {
             "no-item": {
-                "message": "..."
+                "message": "...",
+                "win": "hai vinto, non so come ma hai vinto"
             },
             "L": {
                 "message": "il liquido ha trasformato la lasagna in un unicorno lasagnoso puccioso!",
@@ -63,11 +64,15 @@
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "quale porta scusa???",
-                "transform": "L"
+                "message": "e' chiusa a chiave"
+            },
+            "K": {
+                "message": "nel maldestro tentativo di aprire la porta, rompi la serratura e la chiave rimane incastrata dentro la toppa",
+                "remove_from_inventory": true
             }
         }
     },
+
     "0": {
         "name": "porta",
         "description": "e' una porta",
@@ -79,6 +84,17 @@
             }
         }
     },
+    "Y": {
+        "name": "teletrasportatore",
+        "description": "sembra ancora funzionare",
+        "color": "black",
+        "interactions": {
+            "no-item": {
+                "message": "bzzzshhhzzzz",
+                "move_to_room": 2
+            }
+        }
+    },
     "Q": {
         "name": "quadro",
         "description": "e' proprio un bel quadro",
@@ -87,6 +103,42 @@
             "no-item": {
                 "message": "spostando il quadro ti accorgi che dietro nasconte una cassaforte",
                 "transform": "F"
+            }
+        }
+    },
+    "T": {
+        "name": "baule",
+        "description": "e' un vecchio baule chiuso",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "e' chiuso a chiave"
+            },
+            "L": {
+                "message": "spiaccichi la lasagna sul baule per cercare di aprirlo, ma il baule ti mangia la lasagna...",
+                "remove_from_inventory": true
+            },
+            "K": {
+                "message": "la chiave entra perfettamente nella serratura; la giri",
+                "transform": "B",
+                "remove_from_inventory": true,
+                "game_over": "ops... BOOOOOOOOM"
+            }
+        }
+    },
+
+    "J": {
+        "name": "scarafaggio mutante",
+        "description": "un enorme scarrafone ti sbarra la strada!",
+        "color": "black",
+        "interactions": {
+            "no-item": {
+                "game_over": "kE sKiFooOOhHh!!!1!1!!11!"
+            },
+            "L": {
+                "message": "lo scarafaggio ringrazia per lo spuntino!",
+                "transform": " ",
+                "remove_from_inventory": true
             }
         }
     },

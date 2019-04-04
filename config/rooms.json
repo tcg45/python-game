@@ -1,19 +1,19 @@
 {
     "0": {
-        "name": "Sala",
-        "description": "Questo luogo e' abbastanza accogliente nonostante il senso di claustrofobia che ti trasmette",
+        "name": "Salone",
+        "description": "E' un enorme salone labirintico",
         "color": "white"
     },
 
     "1": {
         "name": "Cucina",
-        "description": "E' tutto molto disordinato. Sembra che nessuno abbia riordinato da molto tempo",
+        "description": "Sembra abbandonata. Ormai non e' più utilizzata da tanto tempo",
         "color": "red"
     },
     
     "2": {
-        "name": "Sogno",
-        "description": "sei evidentemente in un sogno",
+        "name": "Cantina",
+        "description": "E' buio pesto. Percepisci un delizioso profumino di lasagne",
         "color": "black"
     }
 }
