@@ -1,25 +1,15 @@
 {
-    "O": {
-        "name": "coccinella",
-        "color": "red",
-        "description": "che bella!",
-        "interactions":  {
-            "no-item": {
-                "message": "la schiacci",
-                "transform": " "
-            }
-        }
-    },
-    "H": {
-        "name": "idrogeno",
-        "description": "e' dell'idrogeno, non chiedermi come fai a percepirlo...",
-        "color": "magenta",
+
+    "X": {
+        "name": "liquido sconosciuto",
+        "description": "...",
+        "color": "cyan",
         "interactions": {
             "no-item": {
-                "message": "ma scusa... cosa ti aspetti di fare esattamente con l'idrogeno..."
+                "message": "..."
             },
             "L": {
-                "message": "opppero'! hai condito le lasagne con l'idrogeno sprigionando una reazione unicornosa",
+                "message": "il liquido ha trasformato la lasagna in un unicorno lasagnoso puccioso!",
                 "transform": "U"
             }
         }
@@ -159,7 +149,7 @@
     "U": {
         "name": "unicorno",
         "description": "che splendido esemplare fatato!",
-        "color": "blue",
+        "color": "magenta",
         "interactions": {
             "no-item": {
                 "message": "che splendida sensazione",
@@ -169,7 +159,11 @@
             "L": {
                 "message": "quello che una volta  era un leggiadro  unicorno ora e' un unicorno obeso! non volera' mai piu'",
                 "game_over": "peccato!"
-            }
+            },
+
+            "T": {
+                "message": "hai tagliato il corno della povera creatura fatata, che fugge spaventata",
+                "transform": " "
         }
     },
 
@@ -209,4 +203,5 @@
             }
         }  
     }
+}
 }

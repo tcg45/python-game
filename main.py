@@ -4,12 +4,12 @@ from random import choice
 import sys
 
 WRONG_INTERACTION_RESPONSES = [
-    "non succede nulla",
-    "non funziona",
-    "niente da fare",
-    "non credo sia la cosa giusta da fare",
-    "non credo proprio",
-    "non e'il caso"
+    "NOPE",
+    "player usa azione insensata. non è molto efficace",
+    "cosa vuoi fare?",
+    "non credo che usando roba a caso con altra roba a caso si risolva il gioco...",
+    "stai bene?",
+    "non e'il caso..."
 ]
 IS_WINDOWS = sys.platform.lower() == "win32"
 
@@ -153,11 +153,6 @@ class Player(Mobile):
             for entity in self.inventory.values():
                 print("\t- {} {}: {}".format(entity, entity.name, entity.description))
 
-    def change_player_room(self, room):
-        # self.room.number
-        self.room = room
-        # todo set player coords based on previous room
-
     def get_nearby_entities(self):
         nearby_entities = []
         for y in range(-1, 2):
@@ -250,7 +245,7 @@ class Game:
             for entity in nearby_entities:
                 if action == entity.graphic:
                     entity.interact(item)
-                    input("premi un tasto per continuare...")
+                    input("premi INVIO per continuare... ")
                     break
 
 
