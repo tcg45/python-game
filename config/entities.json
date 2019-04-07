@@ -1,27 +1,40 @@
 {
 
     "X": {
-        "name": "liquido sconosciuto",
-        "description": "...",
+        "name": "iphone x",
+        "description": "viva Apple!",
         "color": "cyan",
         "interactions": {
             "no-item": {
                 "message": "...",
-                "win": "hai vinto, non so come ma hai vinto"
-            },
-            "L": {
-                "message": "il liquido ha trasformato la lasagna in un unicorno lasagnoso puccioso!",
-                "transform": "U"
+                "win": "hai cercato i trucchi del gioco su internet!"
             }
         }
     },
+
     "L": {
         "name": "lasagne",
-        "description": "sembrano appetitose",
+        "description": "mmm... squisiitee!",
         "color": "green",
         "interactions": {
             "no-item": {
-                "message": "fa sempre comodo avere delle lasagne in tasca",
+                "message": "chi rinuncerebbe mai alle lasagne della nonna?",
+                "transform": " ",
+                "pickup": true
+            },
+            "L": {
+                "message": "hai fatto una torta di lasagne",
+                "game_over": "non resisti dalla tentazione e diventi una palla di lardo"
+            }
+        }
+    },
+    "O": {
+        "name": "sasso",
+        "description": "e' un sasso",
+        "color": "black",
+        "interactions": {
+            "no-item": {
+                "message": "ok, lo raccogli...",
                 "transform": " ",
                 "pickup": true
             }
@@ -29,21 +42,19 @@
     },
     "B": {
         "name": "bomba",
-        "description": "e' una bomba pronta a detonare, devo sbrigarmi a disinnescarla!",
+        "description": "e' una bomba pronta a detonare, devi sbrigarti a disinnescarla!",
         "color": "red",
         "interactions": {
             "no-item": {
-                "message": "biiiip biiiiiiip biiiiiiiiiiiip",
-                "game_over": "la bomba esplode demolendo l'intera stanza"
+                "message": "bip biiiiiiip biiiiiiiiiiiip",
+                "game_over": "la bomba esplode devastando l'intera stanza"
             },
-
             "V": {
                 "message": "tagli con attenzione un filo che penzola da un lato dell'ordigno...",
                 "win": "hai disinnescato la bomba con successo, sei sano e salvo!"
             },
-
             "L": {
-                "message": "sei un pervertito"
+                "message": "sei tardo?"
             }
         }
     },
@@ -86,7 +97,7 @@
     },
     "Y": {
         "name": "teletrasportatore",
-        "description": "sembra ancora funzionare",
+        "description": "ma siamo nel futuro?",
         "color": "black",
         "interactions": {
             "no-item": {
@@ -97,7 +108,7 @@
     },
     "Q": {
         "name": "quadro",
-        "description": "e' proprio un bel quadro",
+        "description": "mette piu' paura del ritratto di Dorian Gray",
         "color": "blue",
         "interactions": {
             "no-item": {
@@ -122,7 +133,7 @@
                 "message": "la chiave entra perfettamente nella serratura; la giri",
                 "transform": "B",
                 "remove_from_inventory": true,
-                "game_over": "ops... BOOOOOOOOM"
+                "message": ""
             }
         }
     },
@@ -171,51 +182,31 @@
 
     "P": {
         "name": "pianta",
-        "description": "questa pianta non viene annaffiata da molto tempo",
+        "description": "e' una pianta carnivora...",
         "color": "green",
         "interactions": {
             "no-item": {
-                "message": "spostando il vaso noti qualcosa di interessante",
-                "transform": "K"
-            }
-        }
-    },
-
-    "C": {
-        "name": "candelabro",
-        "description": "un vecchio candelabro arrugginito",
-        "color": "yellow",
-        "interactions": {
-            "V": {
-                "message": "mmm, ha proprio senso... abra cadabra!",
-                "transform": " ",
-                "pickup": true
+                "game_over": "gnam gnam"
             },
-            "C": {
-                "message": "mindfuckkkkk!!!!",
-                "transform": "U"
+            "L": {
+                "message": "delizziosssssooooooo",
+                "remove_from_inventory": true
             }
         }
     },
 
-    "U": {
-        "name": "unicorno",
-        "description": "che splendido esemplare fatato!",
-        "color": "magenta",
+    "Z": {
+        "name": "cassa",
+        "description": "e' una cassa molto polverosa",
+        "color": "black",
         "interactions": {
             "no-item": {
-                "message": "che splendida sensazione",
-                "win": "voli via contento e vivrai una vita fatta di soddisfazioni cucciolose"
+                "message": "e' sigillata"
             },
-
-            "L": {
-                "message": "quello che una volta  era un leggiadro  unicorno ora e' un unicorno obeso! non volera' mai piu'",
-                "game_over": "peccato!"
-            },
-
-            "T": {
-                "message": "hai tagliato il corno della povera creatura fatata, che fugge spaventata",
-                "transform": " "
+            "O": {
+                "message": "con immane sforzo riesci a rompere la cassa con... un sasso!",
+                "transform": "L"
+            }
         }
     },
 
@@ -229,6 +220,40 @@
                 "transform": " ",
                 "pickup": true
             }
+        }
+    },
+
+    "C": {
+        "name": "candelabro",
+        "description": "candelabro tenebroso",
+        "color": "yellow",
+        "interactions": {
+            "V": {
+                "message": "allora era utile a qualcosa, congratulazioni!",
+                "transform": " ",
+                "pickup": true
+            }
+        }
+    },
+
+    "U": {
+        "name": "unicorno",
+        "description": "arcobaleno!",
+        "color": "magenta",
+        "interactions": {
+            "no-item": {
+                "message": "felicita'!",
+                "win": "voli via contento e vivrai una vita fatta di soddisfazioni cucciolose, ma forse sei solo sotto effetto di qualche sostanza..."
+            },
+
+            "L": {
+                "message": "oh no, hai fatto ingrassare il povero cornuto!",
+                "game_over": "peccato!"
+            },
+
+            "T": {
+                "message": "hai tagliato il corno della povera creatura fatata, che fugge spaventata",
+                "transform": " "
         }
     },
 

@@ -6,7 +6,7 @@ import sys
 WRONG_INTERACTION_RESPONSES = [
     "NOPE",
     "player usa azione insensata. non è molto efficace",
-    "cosa vuoi fare?",
+    "tu sei pazzo",
     "non credo che usando roba a caso con altra roba a caso si risolva il gioco...",
     "stai bene?",
     "non e'il caso..."
